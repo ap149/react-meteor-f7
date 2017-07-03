@@ -8,9 +8,7 @@ import reducers from '../../store/reducers';
 
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
-import {
-  amber600
-} from 'material-ui/styles/colors';
+import { amber600 } from 'material-ui/styles/colors';
 
 import injectTapEventPlugin from 'react-tap-event-plugin';
 
@@ -18,8 +16,6 @@ import AppContainer from '../../ui/containers/AppContainer.js';
 import EventDetailContainer from '../../ui/containers/EventDetailContainer.js';
 
 import Home from '../../ui/views/Home';
-import DatePoll from '../../ui/views/DatePoll';
-import NewDatePoll from '../../ui/views/NewDatePoll';
 
 injectTapEventPlugin();
 
@@ -49,7 +45,6 @@ Meteor.startup(() => {
           history={browserHistory}
         >
           <Route exact path="/" component={AppContainer} />
-          <Route path="/event/:id" component={EventDetailContainer} />
         </Router>
       </Provider>
     </MuiThemeProvider>,    
