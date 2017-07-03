@@ -1,0 +1,15 @@
+.calendar-cell {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  text-align: center;
+  margin: 3px;
+  font-size: 13px;
+  line-height: 36px;
+  -webkit-transition: 0.42s;
+  transition: 0.42s;  
+}
+
+.calendar-cell.disabled { color: lightgray }
+.calendar-cell.selected { background-color: #FFB300; color: #fff}
+
